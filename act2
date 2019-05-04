@@ -1,0 +1,84 @@
+// A program that shows mm-dd-yyyy
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+    int dd, mm, yyyy;
+    
+    
+    cout << "Enter Day of birth (1-31): " << "\n";
+    cin >> dd; 
+    
+    cout << "Enter Month of birth (1-12):" << "\n";
+    cin >> mm ;
+    
+    cout << "Enter Year of birth:" << "\n" ;
+    cin >> yyyy ;
+    
+    
+switch (mm)
+	{
+
+    case 1: 
+		cout << "January " << dd << ", " << yyyy << " " << "is your birthday!" ; 
+		break; 
+		
+		case 2: 
+		 if (mm = 2 && dd > 28)
+			{cout << "INVALID DATE!!!"; }
+			
+		else
+			{cout << "February " << dd << ", " << yyyy  << " " <<"is your birthday!" ; }		
+		break; 
+		
+		case 3: 
+		cout << "March " << dd << ", " << yyyy << " " <<"is your birthday!" ; 
+		break;
+		
+		case 4: 
+		cout << "April " << dd << ", " << yyyy << " " <<"is your birthday!" ; 
+		break; 
+		
+		case 5: 
+		cout << "May " << dd << ", " << yyyy << " " <<"is your birthday!"; 
+		break; 
+		
+		case 6: 
+		cout << "June " << dd << ", " << yyyy << " " <<"is your birthday!"; 
+		break; 
+		
+		case 7: 
+		cout << "July " << dd << ", " << yyyy << " " <<"is your birthday!"; 
+		break; 
+	
+		case 8: 
+		cout << "August " << dd << ", " << yyyy << " " <<"is your birthday!" ; 
+		break;
+		
+		case 9: 
+		cout << "September " << dd << ", " << yyyy << " " <<"is your birthday!" ; 
+		break;  	
+		
+		case 10: 
+		cout << "October " << dd << ", " << yyyy << " " <<"is your birthday!" ; 
+		break; 	
+		
+		case 11: 
+		cout << "November " << dd << ", " << yyyy << " " <<"is your birthday!" ; 
+		break; 	
+		
+		case 12: 
+		cout << "December " << dd << ", " << yyyy << " " <<"is your birthday!" ; 
+		break; 	
+		
+		default:
+			cout << "HEYYYYYY!! You must enter a number between 1-12 for months and 1-31 for the dates in order to be valid!!!! \n" ;
+		
+    
+}
+_getch ();
+ return 0;
+}
